@@ -1,0 +1,115 @@
+
+
+/* Example CSS styles for the header section */
+header {
+  background-color: rgb(250, 232, 232);
+  color: #fff;
+ 
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 30px 0px ;
+  background-color: rgb(236, 234, 230) ;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+.nav-title{
+  font-size: 2.5rem;
+  color: #0B0223;
+  font-weight: 700;
+  align-items: center;
+}
+
+.gamer{
+  color: #ff42a5;
+}
+
+
+nav ul {
+  list-style-type: none;
+ 
+  
+ 
+}
+
+nav ul li {
+  display: inline;
+
+}
+
+nav ul li a {
+  color: #0B0223;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+
+.logo-add{
+
+  background-color: rgba(11, 2, 35, 0.10);
+  box-shadow: 0px 4px 30px 0px ;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+
+.logo-add img {
+  width: 3%;
+  margin-right: 10px;
+}
+
+.banner-section{
+  display: flex;
+}
+
+
+/* Example CSS styles for the main content section */
+.main-content {
+  /* Define styles for your main content section */
+}
+
+/* Example CSS styles for the footer section */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+/* respovive */
+
+@media screen and (max-width:576px) {
+
+  header , .logo {
+    flex-direction: column;
+
+
+  }
+
+
+  
+}
