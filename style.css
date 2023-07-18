@@ -2,19 +2,20 @@
 
 /* Example CSS styles for the header section */
 header {
-  background-color: rgb(250, 232, 232);
+  background-color: rgb(247, 233, 233);
   color: #fff;
+ 
  
 }
 
 nav{
   display: flex;
-  justify-content: space-between;
+  gap: 250px;
   align-items: center;
+  justify-content: center;
   box-shadow: 0px 4px 30px 0px ;
   background-color: rgb(236, 234, 230) ;
-  padding-right: 100px;
-  padding-left: 100px;
+
 }
 .nav-title{
   font-size: 2.5rem;
@@ -35,9 +36,9 @@ nav ul {
  
 }
 
-nav ul li {
-  display: inline;
-
+nav > ul {
+  display: flex;
+ align-items: center;
 }
 
 nav ul li a {
@@ -48,28 +49,74 @@ nav ul li a {
 
 
 .logo-add{
-
+ 
   background-color: rgba(11, 2, 35, 0.10);
   box-shadow: 0px 4px 30px 0px ;
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 8px 16px;
 }
 
 
 .logo-add img {
-  width: 3%;
-  margin-right: 10px;
+  width: 8%;
+
 }
 
 .banner-section{
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-side-img img{
+  width: 50%;
+  float:right;
+}
+.banner-text{
+  color: #333;
+}
+.gradiend{
+  color: #F948B2;
+}
+ 
+.banner-head-text{
+  font-size: 2rem;
+  color: #0B0223;
+}
+
+p{
+  color: #0B0223;
+}
+
+.btn-primary{
+  padding: 10px 20px;
+  border-radius: 48px;
+  border: none;
+  background-color: #ff42a5;
+  color: white;
+  cursor: pointer;
 }
 
 
-/* Example CSS styles for the main content section */
-.main-content {
-  /* Define styles for your main content section */
+.we-are-gamer-section {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+
+  background:  linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+
 }
+
+.gradiend-weare{
+  color: #F948B2;
+  font-size: 2rem;
+}
+.we-are-gamer-section .gamer img {
+  width: 100%;
+}
+
 
 /* Example CSS styles for the footer section */
 footer {
@@ -94,6 +141,37 @@ footer ul li a {
   text-decoration: none;
 }
 
+.online{
+  text-align: center;
+  margin-top: 100px;
+}
+.game-img-added{
+  display: flex;
+  justify-content: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.images4 img{
+  border: 1px solid wheat;
+  box-shadow: 0px 4px 30px 0px ;
+  border-radius: 10px;
+  width: 90%;
+  margin-top: 50px;
+
+}
+.span-1{
+  color: #F948B2;
+}
+
+.online-head{
+  font-size: 2rem;
+font-weight: 700;
+}
+
+
+
+
+
 
 
 
@@ -104,12 +182,38 @@ footer ul li a {
 
 @media screen and (max-width:576px) {
 
-  header , .logo {
+  nav, nav > ul , .banner-section, .we-are-gamer-section , .game-img-added{
     flex-direction: column;
 
 
   }
+  nav{
+    gap: 10px;
+  }
+  .logo-add{
+   flex-direction: column;
+  }
 
+   .we-are-gamer-section .gamer img{
+    width: 300px;
+    height: 300px;
+  }
+  .logo-add{
+    margin-top: 20px;
+  }
+  .banner-side-img img {
+    justify-content: center;
+  }
+  .we-are-gamer-section, .game-img-added {
+    padding: 10px;
+  }
 
-  
+  .game-img-added{
+    padding-left: 45px;
+    
+  }
+  .online-head{
+    font-size: 1.5rem;
+  font-weight: 700;
+  }
 }
