@@ -99,6 +99,14 @@ p{
   cursor: pointer;
 }
 
+.btn-primary-0{
+  padding: 10px 20px;
+  border-radius: 48px;
+  border: none;
+  background-color:#4EC5F7;
+  color: white;
+  cursor: pointer;
+}
 
 .we-are-gamer-section {
   display: flex;
