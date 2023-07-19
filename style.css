@@ -40,9 +40,6 @@ nav{
 
 nav ul {
   list-style-type: none;
- 
-  
- 
 }
 
 nav > ul {
@@ -415,6 +412,10 @@ footer{
 }
 
 
+
+
+
+
 /* respovive */
 
 @media screen and (max-width:576px) {
@@ -435,10 +436,13 @@ footer{
   nav{
     gap: 10px;
   }
-  .logo-add, .catgory, .footer-list, .footer-icon, .footer-privecy{
+  .logo-add, .catgory, .footer-list, .footer-icon, .footer-privecy, .nav-logo{
    flex-direction: column;
   }
-
+  .nav-logo{
+    gap: 5px;
+    margin-top: 15px;
+  }
   .we-are-gamer-section{
     gap: 10px;
   }
@@ -449,7 +453,30 @@ footer{
   }
   .logo-add{
     margin-top: 20px;
+    position: relative;
+    align-items: center;
+    float: inline-start;
+    
   }
+
+  nav ul li{
+    padding: 40px;
+    margin-right: 50px;
+   }
+
+   .logo-add img {
+    width: 15%;
+  
+   }
+
+  li a img{
+    display: inline;
+    position: relative;
+    bottom: 10px;
+    float: inline-end;
+    align-items: center;
+  }
+
   .banner-side-img img {
   margin-right: 25%;
   position: relative;
@@ -528,5 +555,14 @@ footer{
       padding-top: 20px;
      }
 
+
+     nav ul li{
+      padding: 40px;
+      margin-right: 50px;
+     }
+
+     .logo-add img {
+      width: 15%;
+     }
 
 }
