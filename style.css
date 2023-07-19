@@ -106,7 +106,7 @@ p{
   align-items: center;
   padding-left: 200px;
   padding-right: 200px;
-
+  gap: 100px;
   background:  linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 
 }
@@ -189,8 +189,38 @@ height: 400px;
 }
 
 
+.play-games-online{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  margin-top: 100px;
+
+}
+.play-online-game img{
+  width: 400px;
+  height: 400px;
+}
+
+.play-games-img{
+  text-align: center;
+  color: aliceblue;
+  position: relative;
+  bottom: 150px;
+}
 
 
+.play-games-img img{
+  width: 200px;
+  height: 240px;
+  margin-right: -400px;
+}
+.play-games-online-head{
+  font-size: 2rem;
+  color: #0B0223;
+  font-weight: 700;
+
+}
 
 
 
@@ -203,7 +233,8 @@ height: 400px;
   .banner-section, 
   .we-are-gamer-section ,
   .game-img-added ,
-  .play-instant {
+  .play-instant,
+  .play-games-online {
     flex-direction: column;
 
 
@@ -213,6 +244,10 @@ height: 400px;
   }
   .logo-add{
    flex-direction: column;
+  }
+
+  .we-are-gamer-section{
+    gap: 10px;
   }
 
    .we-are-gamer-section .gamer img{
@@ -238,7 +273,8 @@ height: 400px;
   .we-are-gamer-section{
     padding: 10px;
   }
-   .talking img{
+   .talking img
+    {
     position: static;
     margin-top: 150px;
     margin-left: 20px;
@@ -247,5 +283,17 @@ height: 400px;
    }
    .play-instant{
    gap: 20px;
+   }
+
+   .play-games-img img {
+    position: static;
+    margin-top: 150px;
+    margin-right: 20px;
+    padding: 10px ;
+       
+   }
+
+   .play-games-online{
+    gap: 10px;
    }
 }
