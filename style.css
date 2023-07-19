@@ -321,11 +321,68 @@ height: 400px;
 
 
 
+footer{
+  margin-top: 100px;
+  height: auto;
+  background-color: #0B0223;
+  padding: 20px  0px;
+}
+ .footer{
+ 
+ text-align: center;
+ padding-top: 50px;
+ }
+.footer-logo{
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 700;
+
+}
+ .footer-list{
+  display: flex;
+  color: white;
+  gap: 30px;
+  justify-content: center;
+ }
+
+ .footer-list a{
+  text-decoration: none;
+  color: white;
+ }
+ li{
+  list-style: none;
+ }
 
 
+ .footer-icon{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+ }
 
+ .social-icon img{
+  width: 50%;
+ }
 
+.footer-privecy{
+  display: flex;
+  color:rgba(255, 255, 255, 0.60);
+  gap: 30px;
+  justify-content: center;
+  padding-top: 50px;
+}
 
+.footer-privecy a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.60);
+}
+
+.copyright{
+ color:  rgba(255, 255, 255, 0.60);
+ text-align: center;
+ padding-top: 30px;
+}
 
 
 /* respovive */
@@ -348,7 +405,7 @@ height: 400px;
   nav{
     gap: 10px;
   }
-  .logo-add, .catgory{
+  .logo-add, .catgory, .footer-list, .footer-icon, .footer-privecy{
    flex-direction: column;
   }
 
@@ -418,4 +475,28 @@ height: 400px;
     .career-section{
     padding: 20px;
     }
+
+    .footer-list{
+      text-align: center;
+    }
+
+    .footer-icon{
+     text-align: center;
+     padding-top: 25px;
+    }
+
+    .social-icon img{
+      width: 10%;
+     }
+
+     .footer-privecy{
+      text-align: center;
+     }
+
+     .copyright{
+      text-align: center;
+      padding-top: 20px;
+     }
+
+
 }
