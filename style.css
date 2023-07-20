@@ -340,6 +340,7 @@ height: 400px;
 
 }
 
+
 .catagory-logo{
   display: flex;
   align-items: center;
@@ -474,16 +475,23 @@ footer{
   .play-instant,
   .play-games-online ,
   .career-section,
-  .career-description{
+  .career-description,
+  .catgory{
     flex-direction: column;
 
 
   }
   
+  .footer-list, .footer-icon{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
 
-  .catgory, .footer-list, .footer-icon, .footer-privecy, nav > ul{
-    flex-direction: column;
-   }
+  .footer-privecy{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+   
 
   nav{
     gap: 10px;
@@ -493,8 +501,14 @@ footer{
     gap: 10px;
   }
 
-
-
+  .logo-add{
+    padding: 0px 20px;
+    text-align: center;
+    align-items: center;
+  }
+  .catagory-logo-1{
+    padding: 0 40px;
+  }
    .logo-add img {
     width: 15%;
    }
@@ -515,10 +529,6 @@ footer{
     
   }
 
-   .logo-add img {
-    width: 15%;
-  
-   }
 
   li a img{
     display: inline;
@@ -604,6 +614,13 @@ footer{
     padding: 20px;
     }
 
+    .catagory-logo{
+      padding: 0px 50px;
+    }
+    .logos img{
+      width: 50%;
+    }
+
     .footer-list{
       text-align: center;
     }
@@ -614,7 +631,7 @@ footer{
     }
 
     .social-icon img{
-      width: 10%;
+      width: 40%;
      }
 
      .footer-privecy{
