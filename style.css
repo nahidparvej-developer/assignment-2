@@ -1,6 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* <!-- start header section  --> */
+
+.btn-primary{
+  margin-top: 15px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 48px;
+  border: none;
+  background-color: #ff42a5;
+  color: white;
+  cursor: pointer;
+}
 
 
-/* Example CSS styles for the header section */
+.gamer{
+  color: #ff42a5;
+}
+
+
+
+
+
+
 header {
   background-color: rgb(247, 233, 233);
   color: #fff;
@@ -16,6 +42,7 @@ nav{
   justify-content: space-between;
   box-shadow: 0px 4px 30px 0px ;
   background-color: rgb(236, 234, 230) ;
+  height: auto;
   padding-left: 200px;
   padding-right: 200px;
 
@@ -31,10 +58,6 @@ nav{
   color: #0B0223;
   font-weight: 700;
   align-items: center;
-}
-
-.gamer{
-  color: #ff42a5;
 }
 
 
@@ -77,10 +100,6 @@ nav ul li a:hover{
   align-items: center;
 }
 
-.banner-side-img img{
-  width: 50%;
-  float:right;
-}
 .banner-text{
   color: #333;
 }
@@ -97,14 +116,7 @@ p{
   color: #0B0223;
 }
 
-.btn-primary{
-  padding: 10px 20px;
-  border-radius: 48px;
-  border: none;
-  background-color: #ff42a5;
-  color: white;
-  cursor: pointer;
-}
+
 
 .btn-primary-0{
   padding: 10px 20px;
@@ -114,6 +126,18 @@ p{
   color: white;
   cursor: pointer;
 }
+
+.banner-side-img img{
+  width: 50%;
+  float:right;
+}
+
+
+/* <!-- end header section  --> */
+
+/* start main section  */
+
+/* <!-- start we are gamer section  --> */
 
 .we-are-gamer-section {
   display: flex;
@@ -134,20 +158,26 @@ p{
   width: 100%;
 }
 
+/* <!-- end we are gamer section  --> */
 
-.span-1{
-  color: #F948B2;
+
+
+/* <!-- start Online Games Funny Videos section  --> */
+
+
+
+.online{
+  text-align: center;
+  margin-top: 100px;
 }
-
 .online-head{
   font-size: 2rem;
   font-weight: 700;
   padding: 10px;
   margin-left: 40px;
 }
-.online{
-  text-align: center;
-  margin-top: 100px;
+.span-1{
+  color: #F948B2;
 }
 .game-img-added{
   display: flex;
@@ -167,6 +197,11 @@ p{
   color: #333;
 }
 
+
+/* <!-- end  Online Games Funny Videos section  --> */
+
+
+/* <!-- start Play Instantly  --> */
 
 .play-instant{
   
@@ -203,7 +238,10 @@ height: 400px;
 
 }
 
+/* <!-- end Play Instantly  --> */
 
+
+/* <!-- start play-games-online  --> */
 .play-games-online{
   display: flex;
   justify-content: center;
@@ -236,9 +274,11 @@ height: 400px;
   font-weight: 700;
 
 }
+/* <!-- end play-games-online  --> */
 
 
-/* career  */
+
+/* <!-- start career section  --> */
 
 .career-section{
   display: flex;
@@ -287,9 +327,9 @@ height: 400px;
   cursor: pointer;
 }
 
+/* <!-- end career section  --> */
 
-
-
+/* <!-- start catagory logo section  --> */
 .catgory{
   display: flex;
   justify-content: center;
@@ -343,6 +383,11 @@ height: 400px;
 }
 
 
+/* <!-- start catagory logo section  --> */
+
+/* end main section  */
+
+/* start footer section  */
 
 footer{
   margin-top: 100px;
@@ -364,6 +409,7 @@ footer{
 
 }
  .footer-list{
+  margin-top: 30px;
   display: flex;
   color: white;
   gap: 30px;
@@ -413,15 +459,16 @@ footer{
 
 
 
+/* end footer section  */
+
+          /* responsive section  */
 
 
-
-/* respovive */
+ /* start mobile device responsive section  */
 
 @media screen and (max-width:576px) {
 
   nav, 
-  nav > ul , 
   .banner-section, 
   .we-are-gamer-section ,
   .game-img-added ,
@@ -433,16 +480,51 @@ footer{
 
 
   }
+
+
+  .catgory, .footer-list, .footer-icon, .footer-privecy{
+    flex-direction: column;
+   }
+
+   
   nav{
     gap: 10px;
+    padding: 10px;
   }
-  .logo-add, .catgory, .footer-list, .footer-icon, .footer-privecy, .nav-logo{
-   flex-direction: column;
-  }
+
+  nav ul li{
+    padding: 20px;
+    margin-right: 50px;
+   }
+
+   .logo-add img {
+    width: 15%;
+   }
+
+
   .nav-logo{
     gap: 5px;
     margin-top: 15px;
   }
+
+  nav ul li{
+    padding: 30px;
+    margin-right: 50px;
+   }
+
+   .logo-add img {
+    width: 15%;
+  
+   }
+
+  li a img{
+    display: inline;
+    position: relative;
+    bottom: 10px;
+    float: inline-end;
+    align-items: center;
+  }
+
   .we-are-gamer-section{
     gap: 10px;
   }
@@ -459,22 +541,10 @@ footer{
     
   }
 
-  nav ul li{
-    padding: 40px;
-    margin-right: 50px;
-   }
 
-   .logo-add img {
-    width: 15%;
-  
-   }
 
-  li a img{
-    display: inline;
-    position: relative;
-    bottom: 10px;
-    float: inline-end;
-    align-items: center;
+  .banner-text{
+    margin-top: 15px;
   }
 
   .banner-side-img img {
@@ -556,13 +626,5 @@ footer{
      }
 
 
-     nav ul li{
-      padding: 40px;
-      margin-right: 50px;
-     }
-
-     .logo-add img {
-      width: 15%;
-     }
 
 }
