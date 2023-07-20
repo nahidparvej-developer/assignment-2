@@ -4,8 +4,6 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* <!-- start header section  --> */
-
 .btn-primary{
   margin-top: 15px;
   margin-right: 10px;
@@ -24,8 +22,7 @@
 
 
 
-
-
+/* <!-- start header section  --> */
 
 header {
   background-color: rgb(247, 233, 233);
@@ -51,7 +48,7 @@ nav{
 .nav-logo{
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 .nav-title{
   font-size: 2.5rem;
@@ -63,11 +60,13 @@ nav{
 
 nav ul {
   list-style-type: none;
+  
 }
 
 nav > ul {
   display: flex;
  align-items: center;
+ gap: 20px;
 }
 
 nav ul li a {
@@ -480,13 +479,189 @@ footer{
 
 
   }
+  
 
-
-  .catgory, .footer-list, .footer-icon, .footer-privecy{
+  .catgory, .footer-list, .footer-icon, .footer-privecy, nav > ul{
     flex-direction: column;
    }
 
+  nav{
+    gap: 10px;
+    padding: 10px;
+  }
+  nav > ul{
+    gap: 10px;
+  }
+
+
+
+   .logo-add img {
+    width: 15%;
+   }
+
+
+  .nav-logo{
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  nav ul li{
+    margin-top: 40px;
+  
+   }
+
+   nav ul {
+    list-style-type: none;
+    
+  }
+
+   .logo-add img {
+    width: 15%;
+  
+   }
+
+  li a img{
+    display: inline;
+    position: relative;
+    bottom: 10px;
+    float: inline-end;
+    align-items: center;
+  }
+
+  .we-are-gamer-section{
+    gap: 10px;
+  }
+
+   .we-are-gamer-section .gamer img{
+    width: 300px;
+    height: 300px;
+  }
+  .logo-add{
+    margin-top: 20px;
+    position: relative;
+    align-items: center;
+    float: inline-start;
+    
+  }
+ 
+  .banner-text{
+    margin-top: 15px;
+  }
+
+  .banner-side-img img {
+  margin-right: 25%;
+  position: relative;
+ 
+  }
+  .we-are-gamer-section  {
+    padding: 10px;
+  }
+
+  .game-img-added{
+    padding: 10px;
+    margin-left: 40px;
+  }
+
+  .we-are-gamer-section{
+    padding: 10px;
+  }
+   .talking img
+    {
+    position: static;
+    margin-top: 150px;
+    margin-left: 20px;
+    padding: 10px ;
+       
+   }
+   .play-instant{
+   gap: 20px;
+   }
+
+   .play-games-img img {
+    position: static;
+    margin-top: 150px;
+    margin-right: 20px;
+    padding: 10px ;
+       
+   }
+
+   .play-games-online{
+    gap: 10px;
+   }
    
+   .career-title{
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 10px;
+  }
+  .career-img img{
+    width: 400px;
+    height: 300px;
+
+  }
+    .career-section{
+    padding: 20px;
+    }
+
+    .footer-list{
+      text-align: center;
+    }
+
+    .footer-icon{
+     text-align: center;
+     padding-top: 25px;
+    }
+
+    .social-icon img{
+      width: 10%;
+     }
+
+     .footer-privecy{
+      text-align: center;
+     }
+
+     .copyright{
+      text-align: center;
+      padding-top: 20px;
+     }
+
+
+
+}
+
+
+/* medium device responsive  */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+
+  nav, 
+  /* .banner-section,  */
+  .we-are-gamer-section ,
+  .game-img-added ,
+  .play-instant,
+  .play-games-online ,
+  .career-section,
+  .career-description{
+    flex-direction: column;
+
+
+  }
+
+ .banner-section{
+padding-left: 120px;
+ }
+
+ .btn-primary-0{
+  margin-top: 10px;
+ }
+
+ .catagory-logo:hover {
+  color: #fbfbfc;
+}
+ .logos img{
+  width: 100%;
+ }
   nav{
     gap: 10px;
     padding: 10px;
@@ -495,6 +670,7 @@ footer{
   nav ul li{
     padding: 20px;
     margin-right: 50px;
+    
    }
 
    .logo-add img {
@@ -613,7 +789,7 @@ footer{
     }
 
     .social-icon img{
-      width: 10%;
+      width: 80%;
      }
 
      .footer-privecy{
@@ -624,7 +800,5 @@ footer{
       text-align: center;
       padding-top: 20px;
      }
-
-
-
+  
 }
